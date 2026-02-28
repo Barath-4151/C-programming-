@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int s;
+    printf("Enter number of symptoms: ");
+    scanf("%d",&s);
+
+    if(s < 0)
+        printf("Invalid Input");
+    else if(s >= 5)
+        printf("High Priority - Critical");
+    else if(s >= 3)
+        printf("Medium Priority - Moderate");
+    else
+        printf("Low Priority - Stable");
+
+    return 0;
+}
