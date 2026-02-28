@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    float price, total, revenue;
+    int qty;
+    char m;
+    scanf("%f%d %c", &price, &qty, &m);
+
+    total = price * qty;
+
+    if(m=='A') revenue = total - total*0.10;
+    else if(m=='B') revenue = total - total*0.15;
+    else if(m=='C') revenue = total - total*0.20;
+    else revenue = total;
+
+    printf("Final Revenue: %.2f\n", revenue);
+    printf("Original Amount: %.2f", total);
+    return 0;
+}
