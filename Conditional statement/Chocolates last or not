@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int total, perday, days;
+
+    printf("Enter total chocolates, per day use, planned days: ");
+    scanf("%d%d%d",&total,&perday,&days);
+
+    if(total >= perday*days)
+        printf("1");
+    else
+        printf("0");
+
+    return 0;
+}
